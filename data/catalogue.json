@@ -76,19 +76,20 @@
         "en": "to open",
         "de": "öffnen",
         "es": "abrir",
-        "fr": "Bonvolu malfermi la pordon."
+        "fr": "ouvrir"
       },
-      "example_eo": "Please open the door.",
+      "example_eo": "Bonvolu malfermi la pordon.",
       "examples": {
-        "en": "Bitte öffne die Tür.",
-        "de": "Por favor, abre la puerta.",
-        "es": "Ouvre la porte, s'il te plaît.",
-        "fr": "mal- indicates the opposite: fermi = close."
+        "en": "Please open the door.",
+        "de": "Bitte öffne die Tür.",
+        "es": "Por favor, abre la puerta.",
+        "fr": "Ouvre la porte, s'il te plaît."
       },
       "notes": {
-        "en": "mal- bezeichnet das Gegenteil: fermi = schliessen.",
-        "de": "mal- indica lo contrario: fermi = cerrar.",
-        "es": "mal- indique le contraire : fermi = fermer."
+        "en": "mal- indicates the opposite: fermi = close.",
+        "de": "mal- bezeichnet das Gegenteil: fermi = schliessen.",
+        "es": "mal- indica lo contrario: fermi = cerrar.",
+        "fr": "mal- indique le contraire : fermi = fermer."
       }
     },
     {
@@ -98,19 +99,20 @@
         "en": "although",
         "de": "obwohl",
         "es": "aunque",
-        "fr": "Kvankam pluvas, ni promenas."
+        "fr": "bien que"
       },
-      "example_eo": "Although it is raining, we are walking.",
+      "example_eo": "Kvankam pluvas, ni promenas.",
       "examples": {
-        "en": "Obwohl es regnet, gehen wir spazieren.",
-        "de": "Aunque llueve, paseamos.",
-        "es": "Bien qu'il pleuve, nous nous promenons.",
-        "fr": "A subordinating conjunction introducing a concession."
+        "en": "Although it is raining, we are walking.",
+        "de": "Obwohl es regnet, gehen wir spazieren.",
+        "es": "Aunque llueve, paseamos.",
+        "fr": "Bien qu'il pleuve, nous nous promenons."
       },
       "notes": {
-        "en": "Eine unterordnende Konjunktion für einen Gegensatz.",
-        "de": "Conjunción subordinante concesiva.",
-        "es": "Conjonction de subordination concessive."
+        "en": "A subordinating conjunction introducing a concession.",
+        "de": "Eine unterordnende Konjunktion für einen Gegensatz.",
+        "es": "Conjunción subordinante concesiva.",
+        "fr": "Conjonction de subordination concessive."
       }
     },
     {
