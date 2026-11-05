@@ -1,5 +1,5 @@
 <div class="layout layout--col gap--large text--center">
-  {% if pool_count > 0 %}
+  {% if entry %}
     <div class="flex flex--col flex--center gap--none w--full">
       <span class="value value--xlarge lg:value--xxxlarge text--bold" data-value-fit="true" lang="eo">{{ entry.word | escape }}</span>
       <span class="value value--small lg:value--base" lang="{{ chosen_lang | escape }}">{{ translation | escape }}</span>

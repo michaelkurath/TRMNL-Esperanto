@@ -18,14 +18,16 @@ Beginner has 15 Learn lessons and 15 Discover entries. Mixed alternates between 
 
 The plugin polls hourly so it can pick up the daily payload after GitHub Actions publishes it.
 
-All content ships from GitHub as static JSON. GitHub Actions updates `data/daily.json` at 00:15 UTC each day (and allows manual dispatch). TRMNL sees changed polling data and can regenerate its screen. The rotation continues across New Year.
+GitHub Actions publishes `data/today.json` at 00:15 UTC each day and supports manual dispatch. The feed contains today’s lesson for each mode and difficulty, with all four translations. The rotation continues across New Year.
 
 ## Icon
 
 The monochrome Esperanto star is included in the shared title bar. [esperanto-icon.png](assets/esperanto-icon.png) is the matching 512 × 512 green icon for a listing that accepts a plugin icon upload.
 
 ## Data design
-`data/catalogue.json` contains `learn` and `discover` arrays. The generated `data/daily.json` includes `rotation_day`, the continuous UTC day counter, plus `day_number` for older templates and `generated_date`. Every item has a `level`, an Esperanto title, translated labels (en/de/es/fr), an Esperanto example, a translated example, and a short grammar or cultural note. Keep the JSON well below TRMNL's 100 KB polling limit.
+`data/catalogue.json` is the full Learn and Discover catalogue. Each entry includes its level, headword, example, and translations and notes in EN, DE, ES and FR. The generator uses the continuous UTC day counter to pick nine entries for `data/today.json`, one for each mode and difficulty combination. The number of entries in that feed stays fixed as the catalogue grows.
+
+Existing TRMNL imports can continue to poll `data/daily.json`. That feed advances each day and keeps the original pool sizes. Import the updated plugin from GitHub to switch to the smaller feed and receive future catalogue additions.
 
 Grammar and historical references are available from [lernu!](https://lernu.net/en/gramatiko) and the [Esperanto Museum of the Austrian National Library](https://www.onb.ac.at/en/museums/esperanto-museum/about-the-esperanto-museum/).
 

@@ -7,7 +7,7 @@ polling_verb: get
 framework_version: 3.4.4
 serverless_language: ''
 refresh_interval_floor: ''
-polling_url: https://raw.githubusercontent.com/michaelkurath/TRMNL-Esperanto/main/data/daily.json
+polling_url: https://raw.githubusercontent.com/michaelkurath/TRMNL-Esperanto/main/data/today.json
 polling_headers: ''
 polling_body: ''
 id: 531807
