@@ -20,7 +20,7 @@ for mode, entries in data.items():
     assert all(any(e["level"] == level for e in entries) for level in levels)
 for name in ("settings.yml", "shared.liquid", "full.liquid",
              "half_horizontal.liquid", "half_vertical.liquid", "quadrant.liquid"):
-    assert (ROOT / name).is_file(), name
+    assert (ROOT / "src" / name).is_file(), name
 daily = json.loads((ROOT / "data/daily.json").read_text(encoding="utf-8"))
 assert daily["learn"] == data["learn"] and daily["discover"] == data["discover"]
 assert 1 <= daily["day_number"] <= 366
