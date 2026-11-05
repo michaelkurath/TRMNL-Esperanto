@@ -7,8 +7,7 @@ polling_verb: get
 framework_version: 3.4.4
 serverless_language: python
 refresh_interval_floor: ''
-polling_url: >-
-  https://raw.githubusercontent.com/michaelkurath/TRMNL-Esperanto/main/data/{% if trmnl.plugin_settings.custom_fields_values.lesson_frequency == 'every_refresh' %}refresh{% else %}today{% endif %}.json
+polling_url: https://raw.githubusercontent.com/michaelkurath/TRMNL-Esperanto/main/data/{% if trmnl.plugin_settings.custom_fields_values.lesson_frequency == 'every_refresh' %}refresh{% else %}today{% endif %}.json
 polling_headers: ''
 polling_body: ''
 id: 531807
