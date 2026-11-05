@@ -11,7 +11,7 @@ User settings: `content_mode`, `translation_language` (en/de/es/fr), `difficulty
 
 **New lesson** defaults to **Daily**. Select **Every refresh** to advance on each successful TRMNL plugin refresh. The default polling interval is 60 minutes. Saved State tracks your place separately for each mode and difficulty, and the lessons cycle once you reach the end of a pool.
 
-Beginner has 15 Learn lessons and 15 Discover entries. Mixed alternates between them for a 30-day rotation. Each single-mode beginner rotation lasts 15 days. Intermediate and Advanced each have two entries per mode.
+Beginner and Intermediate each have 15 Learn lessons and 15 Discover entries. In Daily, Mixed takes 30 days to repeat at either level. Each single-mode rotation takes 15 days. Advanced has two entries per mode.
 
 ## Sync or install
 1. For the existing GitHub-connected private plugin, sync from the TRMNL editor. The plugin files live under `src/`.
@@ -31,7 +31,7 @@ The monochrome Esperanto star is included in the shared title bar. [esperanto-ic
 
 Existing TRMNL imports can continue to poll `data/daily.json`. That feed advances each day and keeps the original pool sizes. Import the updated plugin from GitHub to switch to the smaller feed and receive future catalogue additions.
 
-Grammar and historical references are available from [lernu!](https://lernu.net/en/gramatiko) and the [Esperanto Museum of the Austrian National Library](https://www.onb.ac.at/en/museums/esperanto-museum/about-the-esperanto-museum/).
+Grammar and historical references are available from [lernu!](https://lernu.net/en/gramatiko), the [Esperanto Museum of the Austrian National Library](https://www.onb.ac.at/en/museums/esperanto-museum/about-the-esperanto-museum/), the [Akademio de Esperanto](https://www.akademio-de-esperanto.org/fundamento/), and the [UEA Libroservo](https://katalogo.uea.org/katalogo.php).
 
 ## Validation
 Run `python3 scripts/generate_daily.py` to refresh daily data and `python3 scripts/validate.py` to check schema and languages. From the repository root, run `trmnlp lint` and `trmnlp serve`. Use the preview's device and view controls to inspect Full, Half Horizontal, Half Vertical and Quadrant on TRMNL OG and TRMNL X. To preview a different language, mode or level, set the corresponding value under `custom_fields` in `.trmnlp.yml`.

@@ -13,7 +13,6 @@ assert set(data) == {"learn", "discover"}
 for mode, entries in data.items():
     words = {entry["word"].strip().casefold() for entry in entries}
     assert len(words) == len(entries), (mode, "duplicate lesson")
-    assert sum(entry["level"] == "beginner" for entry in entries) >= 15, mode
     for entry in entries:
         assert entry["level"] in LEVELS, entry
         for key in ("word", "example_eo"):
@@ -21,7 +20,9 @@ for mode, entries in data.items():
         for key in ("translations", "examples", "notes"):
             assert set(entry[key]) == languages, (mode, entry["word"], key)
             assert all(isinstance(x, str) and x.strip() for x in entry[key].values())
-    assert all(sum(e["level"] == level for e in entries) >= 2 for level in LEVELS)
+    for level in LEVELS:
+        minimum = 2 if level == "advanced" else 15
+        assert sum(e["level"] == level for e in entries) >= minimum, (mode, level)
 for name in ("settings.yml", "transform.py", "shared.liquid", "full.liquid",
              "half_horizontal.liquid", "half_vertical.liquid", "quadrant.liquid"):
     assert (ROOT / "src" / name).is_file(), name

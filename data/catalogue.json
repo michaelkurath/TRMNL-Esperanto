@@ -392,6 +392,305 @@
       }
     },
     {
+      "level": "intermediate",
+      "word": "malgraŭ",
+      "translations": {
+        "en": "despite",
+        "de": "trotz",
+        "es": "a pesar de",
+        "fr": "malgré"
+      },
+      "example_eo": "Malgraŭ la pluvo, ni promenis.",
+      "examples": {
+        "en": "Despite the rain, we went for a walk.",
+        "de": "Trotz des Regens gingen wir spazieren.",
+        "es": "A pesar de la lluvia, salimos a pasear.",
+        "fr": "Malgré la pluie, nous sommes allés nous promener."
+      },
+      "notes": {
+        "en": "Malgraŭ introduces an obstacle that did not stop the action.",
+        "de": "Malgraŭ nennt ein Hindernis, das die Handlung nicht verhindert hat.",
+        "es": "Malgraŭ introduce un obstáculo que no impidió la acción.",
+        "fr": "Malgraŭ introduit un obstacle qui n’a pas empêché l’action."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "anstataŭ",
+      "translations": {
+        "en": "instead of",
+        "de": "anstelle von",
+        "es": "en vez de",
+        "fr": "au lieu de"
+      },
+      "example_eo": "Mi trinkas teon anstataŭ kafo.",
+      "examples": {
+        "en": "I drink tea instead of coffee.",
+        "de": "Ich trinke Tee statt Kaffee.",
+        "es": "Bebo té en vez de café.",
+        "fr": "Je bois du thé au lieu du café."
+      },
+      "notes": {
+        "en": "Anstataŭ introduces what is being replaced.",
+        "de": "Anstataŭ leitet ein, was ersetzt wird.",
+        "es": "Anstataŭ introduce lo que se sustituye.",
+        "fr": "Anstataŭ introduit ce qui est remplacé."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "dum",
+      "translations": {
+        "en": "while / during",
+        "de": "während",
+        "es": "mientras / durante",
+        "fr": "pendant que / pendant"
+      },
+      "example_eo": "Mi legis, dum ŝi kuiris.",
+      "examples": {
+        "en": "I read while she cooked.",
+        "de": "Ich las, während sie kochte.",
+        "es": "Leí mientras ella cocinaba.",
+        "fr": "J’ai lu pendant qu’elle cuisinait."
+      },
+      "notes": {
+        "en": "Dum can introduce a clause or a period of time.",
+        "de": "Nach dum kann ein Satz oder eine Zeitangabe stehen.",
+        "es": "Dum puede introducir una oración o un periodo de tiempo.",
+        "fr": "Dum peut introduire une proposition ou une durée."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "tuj kiam",
+      "translations": {
+        "en": "as soon as",
+        "de": "sobald",
+        "es": "en cuanto",
+        "fr": "dès que"
+      },
+      "example_eo": "Telefonu al mi tuj kiam vi alvenos.",
+      "examples": {
+        "en": "Call me as soon as you arrive.",
+        "de": "Ruf mich an, sobald du ankommst.",
+        "es": "Llámame en cuanto llegues.",
+        "fr": "Appelle-moi dès que tu arriveras."
+      },
+      "notes": {
+        "en": "Tuj means immediately. Kiam means when.",
+        "de": "Tuj bedeutet «sofort». Kiam bedeutet «wann» oder «wenn».",
+        "es": "Tuj significa «enseguida». Kiam significa «cuándo» o «cuando».",
+        "fr": "Tuj signifie « tout de suite ». Kiam signifie « quand »."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "se",
+      "translations": {
+        "en": "if",
+        "de": "falls / wenn",
+        "es": "si",
+        "fr": "si"
+      },
+      "example_eo": "Se pluvas, ni restos hejme.",
+      "examples": {
+        "en": "If it rains, we’ll stay home.",
+        "de": "Falls es regnet, bleiben wir zu Hause.",
+        "es": "Si llueve, nos quedaremos en casa.",
+        "fr": "S’il pleut, nous resterons à la maison."
+      },
+      "notes": {
+        "en": "Se introduces a condition. Ĉu introduces a yes-or-no question.",
+        "de": "Se leitet eine Bedingung ein. Ĉu leitet eine Ja-Nein-Frage ein.",
+        "es": "Se introduce una condición. Ĉu introduce una pregunta de sí o no.",
+        "fr": "Se introduit une condition. Ĉu introduit une question fermée."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "kies",
+      "translations": {
+        "en": "whose",
+        "de": "wessen",
+        "es": "de quién",
+        "fr": "à qui"
+      },
+      "example_eo": "Kies estas ĉi tiu biciklo?",
+      "examples": {
+        "en": "Whose bicycle is this?",
+        "de": "Wem gehört dieses Velo?",
+        "es": "¿De quién es esta bicicleta?",
+        "fr": "À qui est ce vélo ?"
+      },
+      "notes": {
+        "en": "Kies asks who something belongs to.",
+        "de": "Kies fragt, wem etwas gehört.",
+        "es": "Kies pregunta a quién pertenece algo.",
+        "fr": "Kies sert à demander à qui appartient quelque chose."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "tial",
+      "translations": {
+        "en": "therefore / that’s why",
+        "de": "deshalb",
+        "es": "por eso",
+        "fr": "c’est pourquoi"
+      },
+      "example_eo": "Mi estis laca. Tial mi iris hejmen.",
+      "examples": {
+        "en": "I was tired. That’s why I went home.",
+        "de": "Ich war müde. Deshalb ging ich nach Hause.",
+        "es": "Estaba cansado. Por eso me fui a casa.",
+        "fr": "J’étais fatigué. C’est pourquoi je suis rentré."
+      },
+      "notes": {
+        "en": "Kial asks why. Tial points to the reason.",
+        "de": "Kial fragt nach dem Grund. Tial verweist darauf.",
+        "es": "Kial pregunta por qué. Tial remite a la razón.",
+        "fr": "Kial demande la raison. Tial y renvoie."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "neniu",
+      "translations": {
+        "en": "nobody / no one",
+        "de": "niemand",
+        "es": "nadie",
+        "fr": "personne"
+      },
+      "example_eo": "Neniu respondis al la demando.",
+      "examples": {
+        "en": "Nobody answered the question.",
+        "de": "Niemand beantwortete die Frage.",
+        "es": "Nadie respondió a la pregunta.",
+        "fr": "Personne n’a répondu à la question."
+      },
+      "notes": {
+        "en": "Neniu already negates the sentence in this example.",
+        "de": "Neniu verneint in diesem Beispiel bereits den Satz.",
+        "es": "Neniu ya niega la oración en este ejemplo.",
+        "fr": "Dans cet exemple, neniu suffit à marquer la négation."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "ŝajne",
+      "translations": {
+        "en": "apparently",
+        "de": "anscheinend",
+        "es": "al parecer",
+        "fr": "apparemment"
+      },
+      "example_eo": "Ŝajne la trajno malfruas.",
+      "examples": {
+        "en": "Apparently the train is late.",
+        "de": "Anscheinend hat der Zug Verspätung.",
+        "es": "Al parecer, el tren lleva retraso.",
+        "fr": "Apparemment, le train a du retard."
+      },
+      "notes": {
+        "en": "Ŝajne is an adverb formed from ŝajni (to seem).",
+        "de": "Ŝajne ist ein Adverb zu ŝajni (scheinen).",
+        "es": "Ŝajne es un adverbio derivado de ŝajni (parecer).",
+        "fr": "Ŝajne est un adverbe formé sur ŝajni (sembler)."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "devus",
+      "translations": {
+        "en": "should / ought to",
+        "de": "sollte",
+        "es": "debería",
+        "fr": "devrait"
+      },
+      "example_eo": "Vi devus ripozi iomete.",
+      "examples": {
+        "en": "You should rest a little.",
+        "de": "Du solltest dich etwas ausruhen.",
+        "es": "Deberías descansar un poco.",
+        "fr": "Tu devrais te reposer un peu."
+      },
+      "notes": {
+        "en": "The conditional ending -us softens devi (to have to) into advice here.",
+        "de": "Die Endung -us macht aus devi (müssen) hier einen Rat.",
+        "es": "La terminación -us suaviza aquí devi (tener que) para dar un consejo.",
+        "fr": "La terminaison -us atténue ici devi (devoir) pour donner un conseil."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "ju … des",
+      "translations": {
+        "en": "the more … the more",
+        "de": "je … desto",
+        "es": "cuanto más … más",
+        "fr": "plus … plus"
+      },
+      "example_eo": "Ju pli mi legas, des pli mi komprenas.",
+      "examples": {
+        "en": "The more I read, the more I understand.",
+        "de": "Je mehr ich lese, desto mehr verstehe ich.",
+        "es": "Cuanto más leo, más entiendo.",
+        "fr": "Plus je lis, plus je comprends."
+      },
+      "notes": {
+        "en": "Ju introduces the first comparison. Des introduces the second.",
+        "de": "Ju leitet den ersten Vergleich ein. Des leitet den zweiten ein.",
+        "es": "Ju introduce la primera comparación. Des introduce la segunda.",
+        "fr": "Ju introduit la première comparaison. Des introduit la seconde."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "laŭ",
+      "translations": {
+        "en": "according to",
+        "de": "laut / gemäss",
+        "es": "según",
+        "fr": "selon"
+      },
+      "example_eo": "Laŭ la horaro, la buso foriros je la oka.",
+      "examples": {
+        "en": "According to the timetable, the bus will leave at eight.",
+        "de": "Laut Fahrplan fährt der Bus um acht Uhr ab.",
+        "es": "Según el horario, el autobús saldrá a las ocho.",
+        "fr": "Selon l’horaire, le bus partira à huit heures."
+      },
+      "notes": {
+        "en": "Laŭ can introduce a source, rule or standard.",
+        "de": "Laŭ kann eine Quelle, Regel oder Norm einleiten.",
+        "es": "Laŭ puede introducir una fuente, una regla o una norma.",
+        "fr": "Laŭ peut introduire une source, une règle ou une norme."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "preter",
+      "translations": {
+        "en": "past / beyond",
+        "de": "an … vorbei",
+        "es": "por delante de / más allá de",
+        "fr": "en passant devant / au-delà de"
+      },
+      "example_eo": "Ni marŝis preter la stacidomo.",
+      "examples": {
+        "en": "We walked past the station.",
+        "de": "Wir gingen am Bahnhof vorbei.",
+        "es": "Pasamos a pie por delante de la estación.",
+        "fr": "Nous sommes passés à pied devant la gare."
+      },
+      "notes": {
+        "en": "Preter describes going past a point or landmark.",
+        "de": "Preter beschreibt eine Bewegung an einem Punkt vorbei.",
+        "es": "Preter indica que se pasa de largo por un punto de referencia.",
+        "fr": "Preter indique qu’on passe devant un point de repère."
+      }
+    },
+    {
       "level": "advanced",
       "word": "kvankam",
       "translations": {
@@ -828,6 +1127,305 @@
         "de": "Wird oft für andere Esperanto-Sprechende verwendet.",
         "es": "Se usa a menudo para otro esperantista.",
         "fr": "Souvent employé pour un autre espérantophone."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "ekpluvi",
+      "translations": {
+        "en": "to start raining",
+        "de": "anfangen zu regnen",
+        "es": "empezar a llover",
+        "fr": "se mettre à pleuvoir"
+      },
+      "example_eo": "Ekpluvis tuj post la pikniko.",
+      "examples": {
+        "en": "It started raining right after the picnic.",
+        "de": "Gleich nach dem Picknick fing es an zu regnen.",
+        "es": "Empezó a llover justo después del pícnic.",
+        "fr": "Il s’est mis à pleuvoir juste après le pique-nique."
+      },
+      "notes": {
+        "en": "Ek- can mark the beginning of an action.",
+        "de": "Ek- kann den Beginn einer Handlung markieren.",
+        "es": "Ek- puede indicar el comienzo de una acción.",
+        "fr": "Ek- peut marquer le début d’une action."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "relegi",
+      "translations": {
+        "en": "to reread",
+        "de": "nochmals lesen",
+        "es": "releer",
+        "fr": "relire"
+      },
+      "example_eo": "Mi relegis la leteron antaŭ ol respondi.",
+      "examples": {
+        "en": "I reread the letter before replying.",
+        "de": "Ich las den Brief nochmals, bevor ich antwortete.",
+        "es": "Releí la carta antes de responder.",
+        "fr": "J’ai relu la lettre avant de répondre."
+      },
+      "notes": {
+        "en": "Re- can show that something happens again.",
+        "de": "Re- kann anzeigen, dass etwas erneut geschieht.",
+        "es": "Re- puede indicar que algo ocurre de nuevo.",
+        "fr": "Re- peut indiquer qu’une action se répète."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "trinkebla",
+      "translations": {
+        "en": "drinkable",
+        "de": "trinkbar",
+        "es": "potable",
+        "fr": "potable"
+      },
+      "example_eo": "La akvo el ĉi tiu fonto estas trinkebla.",
+      "examples": {
+        "en": "The water from this spring is drinkable.",
+        "de": "Das Wasser aus dieser Quelle ist trinkbar.",
+        "es": "El agua de este manantial es potable.",
+        "fr": "L’eau de cette source est potable."
+      },
+      "notes": {
+        "en": "The suffix -ebl- shows that something can be done.",
+        "de": "Das Suffix -ebl- zeigt, dass etwas machbar ist.",
+        "es": "El sufijo -ebl- indica que algo se puede hacer.",
+        "fr": "Le suffixe -ebl- indique qu’une action est possible."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "purigi",
+      "translations": {
+        "en": "to clean",
+        "de": "reinigen",
+        "es": "limpiar",
+        "fr": "nettoyer"
+      },
+      "example_eo": "Ni purigis la tablon post la vespermanĝo.",
+      "examples": {
+        "en": "We cleaned the table after dinner.",
+        "de": "Wir reinigten den Tisch nach dem Abendessen.",
+        "es": "Limpiamos la mesa después de cenar.",
+        "fr": "Nous avons nettoyé la table après le dîner."
+      },
+      "notes": {
+        "en": "Purigi means “to make clean”. The suffix -ig- expresses causing a change.",
+        "de": "Purigi heisst «sauber machen». -ig- drückt aus, dass man eine Veränderung bewirkt.",
+        "es": "Purigi significa «dejar limpio». -ig- expresa que se provoca un cambio.",
+        "fr": "Purigi signifie « rendre propre ». -ig- indique qu’on provoque un changement."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "trankviliĝi",
+      "translations": {
+        "en": "to calm down",
+        "de": "sich beruhigen",
+        "es": "calmarse",
+        "fr": "se calmer"
+      },
+      "example_eo": "La infano trankviliĝis post kelkaj minutoj.",
+      "examples": {
+        "en": "The child calmed down after a few minutes.",
+        "de": "Das Kind beruhigte sich nach ein paar Minuten.",
+        "es": "El niño se calmó al cabo de unos minutos.",
+        "fr": "L’enfant s’est calmé au bout de quelques minutes."
+      },
+      "notes": {
+        "en": "The suffix -iĝ- can express becoming something.",
+        "de": "Das Suffix -iĝ- kann ausdrücken, dass etwas einen neuen Zustand annimmt.",
+        "es": "El sufijo -iĝ- puede expresar un cambio de estado.",
+        "fr": "Le suffixe -iĝ- peut exprimer un changement d’état."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "dissendi",
+      "translations": {
+        "en": "to send out / distribute",
+        "de": "aussenden / verteilen",
+        "es": "distribuir / enviar",
+        "fr": "diffuser / envoyer"
+      },
+      "example_eo": "La klubo dissendis la invitilojn.",
+      "examples": {
+        "en": "The club sent out the invitations.",
+        "de": "Der Verein verschickte die Einladungen.",
+        "es": "El club envió las invitaciones.",
+        "fr": "Le club a envoyé les invitations."
+      },
+      "notes": {
+        "en": "Dis- suggests movement in several directions.",
+        "de": "Dis- deutet auf eine Verteilung in mehrere Richtungen hin.",
+        "es": "Dis- sugiere un movimiento en varias direcciones.",
+        "fr": "Dis- suggère un mouvement dans plusieurs directions."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "antaŭĝoji",
+      "translations": {
+        "en": "to look forward to",
+        "de": "sich auf etwas freuen",
+        "es": "esperar con ilusión",
+        "fr": "se réjouir à l’avance"
+      },
+      "example_eo": "Mi antaŭĝojas pri nia vojaĝo.",
+      "examples": {
+        "en": "I’m looking forward to our trip.",
+        "de": "Ich freue mich auf unsere Reise.",
+        "es": "Espero con ilusión nuestro viaje.",
+        "fr": "Je me réjouis à l’avance de notre voyage."
+      },
+      "notes": {
+        "en": "Antaŭ is “before”. Ĝoji is “to be glad”.",
+        "de": "Antaŭ bedeutet «vor». Ĝoji bedeutet «sich freuen».",
+        "es": "Antaŭ significa «antes». Ĝoji significa «alegrarse».",
+        "fr": "Antaŭ signifie « avant ». Ĝoji signifie « se réjouir »."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "kunsido",
+      "translations": {
+        "en": "meeting / session",
+        "de": "Sitzung",
+        "es": "reunión / sesión",
+        "fr": "réunion / séance"
+      },
+      "example_eo": "La kunsido komenciĝos je la deka.",
+      "examples": {
+        "en": "The meeting will start at ten.",
+        "de": "Die Sitzung beginnt um zehn Uhr.",
+        "es": "La reunión empezará a las diez.",
+        "fr": "La réunion commencera à dix heures."
+      },
+      "notes": {
+        "en": "Kunsido combines kun (with) and sidi (to sit).",
+        "de": "Kunsido verbindet kun (mit) und sidi (sitzen).",
+        "es": "Kunsido combina kun (con) y sidi (estar sentado).",
+        "fr": "Kunsido combine kun (avec) et sidi (être assis)."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "babilado",
+      "translations": {
+        "en": "chatting",
+        "de": "Plaudern",
+        "es": "charla",
+        "fr": "bavardage"
+      },
+      "example_eo": "La babilado daŭris ĝis noktomezo.",
+      "examples": {
+        "en": "The chat went on until midnight.",
+        "de": "Das Plaudern dauerte bis Mitternacht.",
+        "es": "La charla duró hasta medianoche.",
+        "fr": "La conversation a duré jusqu’à minuit."
+      },
+      "notes": {
+        "en": "The suffix -ad- can express a continuing or repeated action.",
+        "de": "Das Suffix -ad- kann eine andauernde oder wiederholte Handlung ausdrücken.",
+        "es": "El sufijo -ad- puede expresar una acción continua o repetida.",
+        "fr": "Le suffixe -ad- peut exprimer une action continue ou répétée."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "vortludo",
+      "translations": {
+        "en": "wordplay / pun",
+        "de": "Wortspiel",
+        "es": "juego de palabras",
+        "fr": "jeu de mots"
+      },
+      "example_eo": "Ŝi faris vortludon per du similaj vortoj.",
+      "examples": {
+        "en": "She made a pun with two similar words.",
+        "de": "Sie machte ein Wortspiel mit zwei ähnlichen Wörtern.",
+        "es": "Hizo un juego de palabras con dos palabras parecidas.",
+        "fr": "Elle a fait un jeu de mots avec deux mots semblables."
+      },
+      "notes": {
+        "en": "Vortludo combines vorto (word) and ludo (play).",
+        "de": "Vortludo verbindet vorto (Wort) und ludo (Spiel).",
+        "es": "Vortludo combina vorto (palabra) y ludo (juego).",
+        "fr": "Vortludo combine vorto (mot) et ludo (jeu)."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "libroservo",
+      "translations": {
+        "en": "book service",
+        "de": "Buchdienst",
+        "es": "servicio de libros",
+        "fr": "service de librairie"
+      },
+      "example_eo": "La libroservo ofertas librojn en Esperanto.",
+      "examples": {
+        "en": "The book service offers books in Esperanto.",
+        "de": "Der Buchdienst bietet Bücher auf Esperanto an.",
+        "es": "El servicio de libros ofrece obras en esperanto.",
+        "fr": "Le service de librairie propose des livres en espéranto."
+      },
+      "notes": {
+        "en": "Esperanto organisations use libroservo for a service that supplies books.",
+        "de": "Esperanto-Organisationen nennen einen Dienst, der Bücher anbietet, libroservo.",
+        "es": "Las organizaciones esperantistas usan libroservo para un servicio que suministra libros.",
+        "fr": "Les organisations espérantistes appellent libroservo un service qui fournit des livres."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "Fundamento",
+      "translations": {
+        "en": "Foundation of Esperanto",
+        "de": "Grundlage des Esperanto",
+        "es": "Fundamento del esperanto",
+        "fr": "Fondement de l’espéranto"
+      },
+      "example_eo": "La Fundamento enhavas gramatikon, ekzercojn kaj vortaron.",
+      "examples": {
+        "en": "The Foundation includes a grammar, exercises and a dictionary.",
+        "de": "Die Grundlage enthält eine Grammatik, Übungen und ein Wörterbuch.",
+        "es": "El Fundamento contiene una gramática, ejercicios y un diccionario.",
+        "fr": "Le Fondement contient une grammaire, des exercices et un dictionnaire."
+      },
+      "notes": {
+        "en": "The 1905 Fundamento is the reference foundation of Esperanto.",
+        "de": "Das Fundamento von 1905 ist die Grundlage des Esperanto.",
+        "es": "El Fundamento de 1905 es la base de referencia del esperanto.",
+        "fr": "Le Fundamento de 1905 est le texte fondateur de référence de l’espéranto."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "Bulonja Deklaracio",
+      "translations": {
+        "en": "Declaration of Boulogne",
+        "de": "Erklärung von Boulogne",
+        "es": "Declaración de Boulogne",
+        "fr": "Déclaration de Boulogne"
+      },
+      "example_eo": "La kongreso akceptis la Bulonjan Deklaracion en 1905.",
+      "examples": {
+        "en": "The congress adopted the Declaration of Boulogne in 1905.",
+        "de": "Der Kongress nahm die Erklärung von Boulogne 1905 an.",
+        "es": "El congreso aprobó la Declaración de Boulogne en 1905.",
+        "fr": "Le congrès a adopté la Déclaration de Boulogne en 1905."
+      },
+      "notes": {
+        "en": "The declaration describes what Esperantism means.",
+        "de": "Die Erklärung beschreibt, was unter Esperantismus verstanden wird.",
+        "es": "La declaración describe qué significa el esperantismo.",
+        "fr": "La déclaration décrit ce que signifie l’espérantisme."
       }
     },
     {
