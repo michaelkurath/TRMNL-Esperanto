@@ -1,0 +1,35 @@
+---
+name: Esperanto — Vorto de la Tago
+strategy: polling
+refresh_interval: 1440
+polling_url: https://raw.githubusercontent.com/michaelkurath/TRMNL-Esperanto/main/data/catalogue.json
+polling_verb: GET
+no_screen_padding: 'no'
+dark_mode: 'no'
+custom_fields:
+  - keyname: content_mode
+    name: Content mode
+    field_type: select
+    options:
+      - mixed
+      - learn
+      - discover
+    default: mixed
+    description: Alternate lessons and discoveries or choose one format.
+  - keyname: translation_language
+    name: Translation language
+    field_type: select
+    options:
+      - en
+      - de
+      - es
+      - fr
+    default: en
+  - keyname: difficulty
+    name: Difficulty
+    field_type: select
+    options:
+      - beginner
+      - intermediate
+      - advanced
+    default: beginner
