@@ -2,7 +2,7 @@
 name: Esperanto — Vorto de la Tago
 strategy: polling
 refresh_interval: 1440
-polling_url: https://raw.githubusercontent.com/michaelkurath/TRMNL-Esperanto/main/data/catalogue.json
+polling_url: https://raw.githubusercontent.com/michaelkurath/TRMNL-Esperanto/main/data/daily.json
 polling_verb: GET
 no_screen_padding: 'no'
 dark_mode: 'no'
