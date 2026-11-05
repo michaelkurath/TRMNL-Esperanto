@@ -21,8 +21,7 @@ for mode, entries in data.items():
             assert set(entry[key]) == languages, (mode, entry["word"], key)
             assert all(isinstance(x, str) and x.strip() for x in entry[key].values())
     for level in LEVELS:
-        minimum = 2 if level == "advanced" else 15
-        assert sum(e["level"] == level for e in entries) >= minimum, (mode, level)
+        assert sum(e["level"] == level for e in entries) >= 15, (mode, level)
 for name in ("settings.yml", "transform.py", "shared.liquid", "full.liquid",
              "half_horizontal.liquid", "half_vertical.liquid", "quadrant.liquid"):
     assert (ROOT / "src" / name).is_file(), name
