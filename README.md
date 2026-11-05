@@ -9,6 +9,8 @@ A monochrome TRMNL e-paper micro-learning plugin for Esperanto.
 
 User settings: `content_mode`, `translation_language` (en/de/es/fr), `difficulty` (beginner/intermediate/advanced).
 
+Beginner has 15 Learn lessons and 15 Discover entries. Mixed alternates between them for a 30-day rotation. Each single-mode beginner rotation lasts 15 days. Intermediate and Advanced each have two entries per mode.
+
 ## Sync or install
 1. For the existing GitHub-connected private plugin, sync from the TRMNL editor. The plugin files live under `src/`.
 2. For a manual import, make a flat ZIP of the contents of `src/` and use the private plugin **Import** feature.
@@ -16,10 +18,16 @@ User settings: `content_mode`, `translation_language` (en/de/es/fr), `difficulty
 
 The plugin polls hourly so it can pick up the daily payload after GitHub Actions publishes it.
 
-All content ships from GitHub as static JSON. GitHub Actions updates `data/daily.json` at 00:15 UTC each day (and allows manual dispatch). TRMNL sees changed polling data and can regenerate its screen. No external paid API or private server is required. Content repeats after its current pool is exhausted; the day-of-year selection also repeats annually.
+All content ships from GitHub as static JSON. GitHub Actions updates `data/daily.json` at 00:15 UTC each day (and allows manual dispatch). TRMNL sees changed polling data and can regenerate its screen. The rotation continues across New Year.
+
+## Icon
+
+The monochrome Esperanto star is included in the shared title bar. [esperanto-icon.png](assets/esperanto-icon.png) is the matching 512 × 512 green icon for a listing that accepts a plugin icon upload.
 
 ## Data design
-`data/catalogue.json` contains `learn` and `discover` arrays. The generated `data/daily.json` also contains `day_number` and `generated_date`. Every item has a `level`, an Esperanto title, translated labels (en/de/es/fr), Esperanto example, translated example, and short grammar or cultural note. Keep the JSON well below TRMNL's 100 KB polling limit. The initial catalogue is intentionally small, **not** 365 completed lessons.
+`data/catalogue.json` contains `learn` and `discover` arrays. The generated `data/daily.json` includes `rotation_day`, the continuous UTC day counter, plus `day_number` for older templates and `generated_date`. Every item has a `level`, an Esperanto title, translated labels (en/de/es/fr), an Esperanto example, a translated example, and a short grammar or cultural note. Keep the JSON well below TRMNL's 100 KB polling limit.
+
+Grammar and historical references are available from [lernu!](https://lernu.net/en/gramatiko) and the [Esperanto Museum of the Austrian National Library](https://www.onb.ac.at/en/museums/esperanto-museum/about-the-esperanto-museum/).
 
 ## Validation
 Run `python3 scripts/generate_daily.py` to refresh daily data and `python3 scripts/validate.py` to check schema and languages. From the repository root, run `trmnlp lint` and `trmnlp serve`. Use the preview's device and view controls to inspect Full, Half Horizontal, Half Vertical and Quadrant on TRMNL OG and TRMNL X. To preview a different language, mode or level, set the corresponding value under `custom_fields` in `.trmnlp.yml`.
