@@ -4,32 +4,32 @@ import json
 from datetime import date
 from pathlib import Path
 
-from generate_daily import ROTATION_EPOCH
+from generate_daily import LEVELS, build_feeds
 
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT / "data/catalogue.json").read_text(encoding="utf-8"))
 languages = {"en", "de", "es", "fr"}
-levels = {"beginner", "intermediate", "advanced"}
 assert set(data) == {"learn", "discover"}
 for mode, entries in data.items():
     words = {entry["word"].strip().casefold() for entry in entries}
     assert len(words) == len(entries), (mode, "duplicate lesson")
     assert sum(entry["level"] == "beginner" for entry in entries) >= 15, mode
     for entry in entries:
-        assert entry["level"] in levels, entry
+        assert entry["level"] in LEVELS, entry
         for key in ("word", "example_eo"):
             assert isinstance(entry[key], str) and entry[key].strip()
         for key in ("translations", "examples", "notes"):
             assert set(entry[key]) == languages, (mode, entry["word"], key)
             assert all(isinstance(x, str) and x.strip() for x in entry[key].values())
-    assert all(any(e["level"] == level for e in entries) for level in levels)
+    assert all(any(e["level"] == level for e in entries) for level in LEVELS)
 for name in ("settings.yml", "shared.liquid", "full.liquid",
              "half_horizontal.liquid", "half_vertical.liquid", "quadrant.liquid"):
     assert (ROOT / "src" / name).is_file(), name
-daily = json.loads((ROOT / "data/daily.json").read_text(encoding="utf-8"))
-assert daily["learn"] == data["learn"] and daily["discover"] == data["discover"]
-generated_date = date.fromisoformat(daily["generated_date"])
-assert daily["day_number"] == generated_date.timetuple().tm_yday
-assert daily["rotation_day"] == (generated_date - ROTATION_EPOCH).days + 1
-assert len((ROOT / "data/daily.json").read_bytes()) < 100_000
-print(f"OK: {sum(map(len, data.values()))} entries; 2 modes, 3 levels, 4 languages")
+feed_dir = ROOT / "data"
+today_payload = json.loads((feed_dir / "today.json").read_text(encoding="utf-8"))
+generated_date = date.fromisoformat(today_payload["generated_date"])
+for name, expected in build_feeds(data, generated_date).items():
+    path = feed_dir / name
+    assert json.loads(path.read_text(encoding="utf-8")) == expected, name
+    assert path.stat().st_size < 100_000, name
+print(f"OK: {sum(map(len, data.values()))} entries; 3 modes, 3 levels, 4 languages")

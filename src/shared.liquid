@@ -4,23 +4,33 @@
 {% assign chosen_mode = content_mode %}
 {% assign chosen_lang = settings.translation_language | default: translation_language | default: 'en' %}
 {% assign chosen_level = settings.difficulty | default: difficulty | default: 'beginner' %}
-{% assign lesson_day = rotation_day | default: day_number | default: 1 | plus: 0 %}
-{% assign parity = lesson_day | modulo: 2 %}
-{% if chosen_mode == 'mixed' %}
-  {% if parity == 0 %}{% assign chosen_mode = 'learn' %}{% else %}{% assign chosen_mode = 'discover' %}{% endif %}
-{% endif %}
-{% if chosen_mode == 'discover' %}
-  {% assign pool = discover | where: 'level', chosen_level %}
-{% else %}
-  {% assign pool = learn | where: 'level', chosen_level %}
-{% endif %}
-{% assign pool_count = pool.size %}
-{% if pool_count > 0 %}
-  {% assign item_index = lesson_day | minus: 1 | divided_by: 2 | modulo: pool_count %}
-  {% if content_mode == 'learn' or content_mode == 'discover' %}
-    {% assign item_index = lesson_day | minus: 1 | modulo: pool_count %}
+{% if lessons %}
+  {% assign entry = lessons[content_mode][chosen_level] %}
+  {% if content_mode == 'mixed' %}
+    {% assign chosen_mode = mixed_mode %}
   {% endif %}
-  {% assign entry = pool[item_index] %}
+{% else %}
+  {% comment %}Keep rendering cached responses from the legacy feed until the next poll.{% endcomment %}
+  {% assign lesson_day = rotation_day | default: day_number | default: 1 | plus: 0 %}
+  {% assign parity = lesson_day | modulo: 2 %}
+  {% if chosen_mode == 'mixed' %}
+    {% if parity == 0 %}{% assign chosen_mode = 'learn' %}{% else %}{% assign chosen_mode = 'discover' %}{% endif %}
+  {% endif %}
+  {% if chosen_mode == 'discover' %}
+    {% assign pool = discover | where: 'level', chosen_level %}
+  {% else %}
+    {% assign pool = learn | where: 'level', chosen_level %}
+  {% endif %}
+  {% assign pool_count = pool.size %}
+  {% if pool_count > 0 %}
+    {% assign item_index = lesson_day | minus: 1 | divided_by: 2 | modulo: pool_count %}
+    {% if content_mode == 'learn' or content_mode == 'discover' %}
+      {% assign item_index = lesson_day | minus: 1 | modulo: pool_count %}
+    {% endif %}
+    {% assign entry = pool[item_index] %}
+  {% endif %}
+{% endif %}
+{% if entry %}
   {% assign translation = entry.translations[chosen_lang] | default: entry.translations.en %}
   {% assign example_translation = entry.examples[chosen_lang] | default: entry.examples.en %}
   {% assign note_translation = entry.notes[chosen_lang] | default: entry.notes.en %}
