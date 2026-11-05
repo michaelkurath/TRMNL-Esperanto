@@ -1,0 +1,26 @@
+name: Refresh daily Esperanto payload
+on:
+  schedule:
+    - cron: '15 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/generate_daily.py
+      - run: python3 scripts/validate.py
+      - name: Publish data change
+        run: |
+          if ! git diff --quiet -- data/daily.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/daily.json
+            git commit -m "chore: refresh Esperanto daily payload"
+            git push
+          fi
