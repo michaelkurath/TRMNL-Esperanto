@@ -2,7 +2,7 @@
 {% assign chosen_mode = content_mode | default: 'mixed' %}
 {% assign chosen_lang = translation_language | default: 'en' %}
 {% assign chosen_level = difficulty | default: 'beginner' %}
-{% assign day_number = 'now' | date: '%j' | plus: 0 %}
+{% assign day_number = day_number | default: 1 | plus: 0 %}
 {% assign parity = day_number | modulo: 2 %}
 {% if chosen_mode == 'mixed' %}
   {% if parity == 0 %}{% assign chosen_mode = 'learn' %}{% else %}{% assign chosen_mode = 'discover' %}{% endif %}
