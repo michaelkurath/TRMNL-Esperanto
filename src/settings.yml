@@ -7,12 +7,47 @@ polling_verb: get
 framework_version: 3.4.4
 serverless_language: ''
 refresh_interval_floor: ''
-polling_url: ''
+polling_url: https://raw.githubusercontent.com/michaelkurath/TRMNL-Esperanto/main/data/daily.json
 polling_headers: ''
 polling_body: ''
 id: 531807
 oauth_enabled: 'false'
 oauth_pkce_enabled: 'no'
 name: Esperanto
-description: ''
-refresh_interval: 15
+description: Learn a little Esperanto daily.
+refresh_interval: 60
+custom_fields:
+- keyname: author_bio
+  name: About Esperanto
+  field_type: author_bio
+  description: Daily Esperanto vocabulary, idioms and cultural notes.
+  github_url: https://github.com/michaelkurath/TRMNL-Esperanto
+- keyname: content_mode
+  name: Content mode
+  field_type: select
+  options:
+  - Mixed: mixed
+  - Learn: learn
+  - Discover: discover
+  default: mixed
+  optional: true
+  description: Alternate between lessons and discoveries or choose one format.
+- keyname: translation_language
+  name: Translation language
+  field_type: select
+  options:
+  - English: en
+  - Deutsch: de
+  - Español: es
+  - Français: fr
+  default: en
+  optional: true
+- keyname: difficulty
+  name: Difficulty
+  field_type: select
+  options:
+  - Beginner: beginner
+  - Intermediate: intermediate
+  - Advanced: advanced
+  default: beginner
+  optional: true
