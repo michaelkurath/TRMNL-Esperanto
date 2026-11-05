@@ -17,8 +17,12 @@ custom_fields:
 - keyname: author_bio
   name: About Esperanto
   field_type: author_bio
-  description: Daily Esperanto vocabulary, idioms and cultural notes.
+  category: education,discovery
+  description: |-
+    Esperanto is an international language created by L. L. Zamenhof and first published in 1887. It was designed to make communication easier between people who speak different languages.
+    On TRMNL, learn a word or expression with an example sentence and a short note. Choose Learn for vocabulary and grammar, Discover for idioms and culture, or Mixed for both. Lessons are available at three levels, with translations in English, German, Spanish and French.
   github_url: https://github.com/michaelkurath/TRMNL-Esperanto
+  learn_more_url: https://en.wikipedia.org/wiki/Esperanto
 - keyname: content_mode
   name: Content mode
   field_type: select
