@@ -1,0 +1,284 @@
+{
+  "day_number": 309,
+  "generated_date": "2026-11-05",
+  "learn": [
+    {
+      "level": "beginner",
+      "word": "Saluton!",
+      "translations": {
+        "en": "Hello!",
+        "de": "Hallo!",
+        "es": "¡Hola!",
+        "fr": "Bonjour !"
+      },
+      "example_eo": "Saluton! Kiel vi fartas?",
+      "examples": {
+        "en": "Hello! How are you?",
+        "de": "Hallo! Wie geht es dir?",
+        "es": "¡Hola! ¿Cómo estás?",
+        "fr": "Bonjour ! Comment vas-tu ?"
+      },
+      "notes": {
+        "en": "A common Esperanto greeting.",
+        "de": "Eine gebräuchliche Begrüssung.",
+        "es": "Un saludo frecuente.",
+        "fr": "Une salutation courante."
+      }
+    },
+    {
+      "level": "beginner",
+      "word": "dankon",
+      "translations": {
+        "en": "thank you",
+        "de": "danke",
+        "es": "gracias",
+        "fr": "merci"
+      },
+      "example_eo": "Dankon pro via helpo.",
+      "examples": {
+        "en": "Thank you for your help.",
+        "de": "Danke für deine Hilfe.",
+        "es": "Gracias por tu ayuda.",
+        "fr": "Merci pour ton aide."
+      },
+      "notes": {
+        "en": "The -n marks the accusative ending.",
+        "de": "-n kennzeichnet den Akkusativ.",
+        "es": "-n marca el acusativo.",
+        "fr": "-n marque l'accusatif."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "lernejo",
+      "translations": {
+        "en": "school",
+        "de": "Schule",
+        "es": "escuela",
+        "fr": "école"
+      },
+      "example_eo": "La infanoj iras al la lernejo.",
+      "examples": {
+        "en": "The children go to school.",
+        "de": "Die Kinder gehen zur Schule.",
+        "es": "Los niños van a la escuela.",
+        "fr": "Les enfants vont à l'école."
+      },
+      "notes": {
+        "en": "lern- (learn) + -ej- (place) + -o (noun).",
+        "de": "lern- (lernen) + -ej- (Ort) + -o (Substantiv).",
+        "es": "lern- (aprender) + -ej- (lugar) + -o (sustantivo).",
+        "fr": "lern- (apprendre) + -ej- (lieu) + -o (nom)."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "malfermi",
+      "translations": {
+        "en": "to open",
+        "de": "öffnen",
+        "es": "abrir",
+        "fr": "ouvrir"
+      },
+      "example_eo": "Bonvolu malfermi la pordon.",
+      "examples": {
+        "en": "Please open the door.",
+        "de": "Bitte öffne die Tür.",
+        "es": "Por favor, abre la puerta.",
+        "fr": "Ouvre la porte, s'il te plaît."
+      },
+      "notes": {
+        "en": "mal- indicates the opposite: fermi = close.",
+        "de": "mal- bezeichnet das Gegenteil: fermi = schliessen.",
+        "es": "mal- indica lo contrario: fermi = cerrar.",
+        "fr": "mal- indique le contraire : fermi = fermer."
+      }
+    },
+    {
+      "level": "advanced",
+      "word": "kvankam",
+      "translations": {
+        "en": "although",
+        "de": "obwohl",
+        "es": "aunque",
+        "fr": "bien que"
+      },
+      "example_eo": "Kvankam pluvas, ni promenas.",
+      "examples": {
+        "en": "Although it is raining, we are walking.",
+        "de": "Obwohl es regnet, gehen wir spazieren.",
+        "es": "Aunque llueve, paseamos.",
+        "fr": "Bien qu'il pleuve, nous nous promenons."
+      },
+      "notes": {
+        "en": "A subordinating conjunction introducing a concession.",
+        "de": "Eine unterordnende Konjunktion für einen Gegensatz.",
+        "es": "Conjunción subordinante concesiva.",
+        "fr": "Conjonction de subordination concessive."
+      }
+    },
+    {
+      "level": "advanced",
+      "word": "ĉiukaze",
+      "translations": {
+        "en": "in any case",
+        "de": "auf jeden Fall",
+        "es": "en cualquier caso",
+        "fr": "dans tous les cas"
+      },
+      "example_eo": "Ĉiukaze, ni devas provi.",
+      "examples": {
+        "en": "In any case, we must try.",
+        "de": "Auf jeden Fall müssen wir es versuchen.",
+        "es": "En cualquier caso, debemos intentarlo.",
+        "fr": "Dans tous les cas, nous devons essayer."
+      },
+      "notes": {
+        "en": "ĉiu (each/every) + kazo (case) + -e (adverb).",
+        "de": "ĉiu (jeder) + kazo (Fall) + -e (Adverb).",
+        "es": "ĉiu (cada) + kazo (caso) + -e (adverbio).",
+        "fr": "ĉiu (chaque) + kazo (cas) + -e (adverbe)."
+      }
+    }
+  ],
+  "discover": [
+    {
+      "level": "beginner",
+      "word": "amiko",
+      "translations": {
+        "en": "friend",
+        "de": "Freund",
+        "es": "amigo",
+        "fr": "ami"
+      },
+      "example_eo": "Mia amiko lernas Esperanton.",
+      "examples": {
+        "en": "My friend is learning Esperanto.",
+        "de": "Mein Freund lernt Esperanto.",
+        "es": "Mi amigo aprende esperanto.",
+        "fr": "Mon ami apprend l'espéranto."
+      },
+      "notes": {
+        "en": "The suffix -in- traditionally forms feminine counterparts: amikino.",
+        "de": "Das Suffix -in- bildet traditionell weibliche Formen: amikino.",
+        "es": "El sufijo -in- forma tradicionalmente el femenino: amikino.",
+        "fr": "Le suffixe -in- forme traditionnellement le féminin : amikino."
+      }
+    },
+    {
+      "level": "beginner",
+      "word": "esperanto",
+      "translations": {
+        "en": "one who hopes",
+        "de": "jemand, der hofft",
+        "es": "quien espera",
+        "fr": "celui qui espère"
+      },
+      "example_eo": "Mi parolas Esperanton.",
+      "examples": {
+        "en": "I speak Esperanto.",
+        "de": "Ich spreche Esperanto.",
+        "es": "Hablo esperanto.",
+        "fr": "Je parle espéranto."
+      },
+      "notes": {
+        "en": "The language takes its name from the pseudonym Dr. Esperanto.",
+        "de": "Der Name stammt vom Pseudonym Dr. Esperanto.",
+        "es": "El nombre viene del seudónimo Dr. Esperanto.",
+        "fr": "Le nom vient du pseudonyme Dr Esperanto."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "krokodili",
+      "translations": {
+        "en": "to speak another language among Esperanto speakers",
+        "de": "unter Esperantisten eine andere Sprache sprechen",
+        "es": "hablar otra lengua entre esperantistas",
+        "fr": "parler une autre langue entre espérantophones"
+      },
+      "example_eo": "Ne krokodilu dum la renkontiĝo!",
+      "examples": {
+        "en": "Don't switch languages at the gathering!",
+        "de": "Wechsle beim Treffen nicht in eine andere Sprache!",
+        "es": "¡No cambies de idioma en el encuentro!",
+        "fr": "Ne change pas de langue pendant la rencontre !"
+      },
+      "notes": {
+        "en": "An informal Esperanto-community expression.",
+        "de": "Ein umgangssprachlicher Ausdruck der Esperanto-Gemeinschaft.",
+        "es": "Una expresión informal de la comunidad esperantista.",
+        "fr": "Une expression familière de la communauté espérantophone."
+      }
+    },
+    {
+      "level": "intermediate",
+      "word": "samideano",
+      "translations": {
+        "en": "fellow idealist",
+        "de": "Gleichgesinnter",
+        "es": "persona con los mismos ideales",
+        "fr": "personne partageant les mêmes idéaux"
+      },
+      "example_eo": "Mi renkontis samideanon.",
+      "examples": {
+        "en": "I met a fellow idealist.",
+        "de": "Ich traf einen Gleichgesinnten.",
+        "es": "Conocí a alguien con los mismos ideales.",
+        "fr": "J'ai rencontré quelqu'un partageant mes idéaux."
+      },
+      "notes": {
+        "en": "Often used for a fellow Esperanto speaker.",
+        "de": "Wird oft für andere Esperanto-Sprechende verwendet.",
+        "es": "Se usa a menudo para otro esperantista.",
+        "fr": "Souvent employé pour un autre espérantophone."
+      }
+    },
+    {
+      "level": "advanced",
+      "word": "kabei",
+      "translations": {
+        "en": "to leave the Esperanto movement",
+        "de": "die Esperanto-Bewegung verlassen",
+        "es": "abandonar el movimiento esperantista",
+        "fr": "quitter le mouvement espérantiste"
+      },
+      "example_eo": "Li decidis kabei.",
+      "examples": {
+        "en": "He decided to leave the Esperanto movement.",
+        "de": "Er beschloss, die Esperanto-Bewegung zu verlassen.",
+        "es": "Decidió dejar el movimiento esperantista.",
+        "fr": "Il a décidé de quitter le mouvement espérantiste."
+      },
+      "notes": {
+        "en": "Named after the Esperanto writer Kabe.",
+        "de": "Benannt nach dem Esperanto-Schriftsteller Kabe.",
+        "es": "Lleva el nombre del escritor esperantista Kabe.",
+        "fr": "Tiré du nom de l'écrivain espérantiste Kabe."
+      }
+    },
+    {
+      "level": "advanced",
+      "word": "finvenkismo",
+      "translations": {
+        "en": "final-victory movement",
+        "de": "Bewegung für den endgültigen Sieg",
+        "es": "movimiento por la victoria final",
+        "fr": "mouvement de la victoire finale"
+      },
+      "example_eo": "Finvenkismo estas historia ideo.",
+      "examples": {
+        "en": "Finvenkismo is a historical idea.",
+        "de": "Finvenkismo ist eine historische Idee.",
+        "es": "El finvenkismo es una idea histórica.",
+        "fr": "Le finvenkismo est une idée historique."
+      },
+      "notes": {
+        "en": "A movement advocating widespread adoption of Esperanto.",
+        "de": "Eine Strömung, die eine breite Verbreitung von Esperanto anstrebt.",
+        "es": "Corriente que busca la adopción general del esperanto.",
+        "fr": "Courant visant l'adoption généralisée de l'espéranto."
+      }
+    }
+  ]
+}
