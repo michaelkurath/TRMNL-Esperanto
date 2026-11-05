@@ -4,7 +4,10 @@
 {% assign chosen_mode = content_mode %}
 {% assign chosen_lang = settings.translation_language | default: translation_language | default: 'en' %}
 {% assign chosen_level = settings.difficulty | default: difficulty | default: 'beginner' %}
-{% if lessons %}
+{% if refresh_lesson %}
+  {% assign entry = refresh_lesson.entry %}
+  {% assign chosen_mode = refresh_lesson.mode %}
+{% elsif lessons %}
   {% assign entry = lessons[content_mode][chosen_level] %}
   {% if content_mode == 'mixed' %}
     {% assign chosen_mode = mixed_mode %}

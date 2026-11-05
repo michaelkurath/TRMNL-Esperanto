@@ -21,8 +21,8 @@ for mode, entries in data.items():
         for key in ("translations", "examples", "notes"):
             assert set(entry[key]) == languages, (mode, entry["word"], key)
             assert all(isinstance(x, str) and x.strip() for x in entry[key].values())
-    assert all(any(e["level"] == level for e in entries) for level in LEVELS)
-for name in ("settings.yml", "shared.liquid", "full.liquid",
+    assert all(sum(e["level"] == level for e in entries) >= 2 for level in LEVELS)
+for name in ("settings.yml", "transform.py", "shared.liquid", "full.liquid",
              "half_horizontal.liquid", "half_vertical.liquid", "quadrant.liquid"):
     assert (ROOT / "src" / name).is_file(), name
 feed_dir = ROOT / "data"
