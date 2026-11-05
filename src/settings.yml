@@ -5,9 +5,10 @@ dark_mode: 'no'
 static_data: ''
 polling_verb: get
 framework_version: 3.4.4
-serverless_language: ''
+serverless_language: python
 refresh_interval_floor: ''
-polling_url: https://raw.githubusercontent.com/michaelkurath/TRMNL-Esperanto/main/data/today.json
+polling_url: >-
+  https://raw.githubusercontent.com/michaelkurath/TRMNL-Esperanto/main/data/{% if trmnl.plugin_settings.custom_fields_values.lesson_frequency == 'every_refresh' %}refresh{% else %}today{% endif %}.json
 polling_headers: ''
 polling_body: ''
 id: 531807
@@ -29,6 +30,15 @@ custom_fields:
   default: mixed
   optional: true
   description: Alternate between lessons and discoveries or choose one format.
+- keyname: lesson_frequency
+  name: New lesson
+  field_type: select
+  options:
+  - Daily: daily
+  - Every refresh: every_refresh
+  default: daily
+  optional: true
+  description: Show one lesson per day or advance on each plugin refresh.
 - keyname: translation_language
   name: Translation language
   field_type: select

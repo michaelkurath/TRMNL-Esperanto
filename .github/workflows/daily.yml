@@ -17,10 +17,10 @@ jobs:
       - run: python3 scripts/validate.py
       - name: Publish data change
         run: |
-          if ! git diff --quiet -- data/daily.json data/today.json; then
+          if ! git diff --quiet -- data/daily.json data/today.json data/refresh.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/daily.json data/today.json
+            git add data/daily.json data/today.json data/refresh.json
             git commit -m "chore: refresh Esperanto daily payload"
             git push
           fi

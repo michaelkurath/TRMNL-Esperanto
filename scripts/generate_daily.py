@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 # Preserve the original 2026 day numbers and keep counting across New Year.
 ROTATION_EPOCH = dt.date(2026, 1, 1)
 LEVELS = ("beginner", "intermediate", "advanced")
+REFRESH_WINDOW_SIZE = 15
 LEGACY_POOL_SIZES = {"beginner": 15, "intermediate": 2, "advanced": 2}
 
 
@@ -34,6 +35,21 @@ def build_feeds(catalogue, today):
     metadata = {"rotation_day": rotation_day, "generated_date": today.isoformat()}
     compact = {**metadata, "mixed_mode": mixed_mode, "lessons": lessons}
 
+    # Expose all small pools and a moving window of larger pools.
+    refresh = {
+        **compact,
+        "refresh_pools": {
+            mode: {
+                level: [
+                    pool[(single_index + offset) % len(pool)]
+                    for offset in range(min(len(pool), REFRESH_WINDOW_SIZE))
+                ] if len(pool) > REFRESH_WINDOW_SIZE else pool
+                for level, pool in mode_pools.items()
+            }
+            for mode, mode_pools in pools.items()
+        },
+    }
+
     # Older plugin installs still read daily.json. Keep its catalogue bounded
     # at the original pool sizes while advancing the same daily clock.
     legacy = {
@@ -48,7 +64,7 @@ def build_feeds(catalogue, today):
             for mode, mode_pools in pools.items()
         },
     }
-    return {"today.json": compact, "daily.json": legacy}
+    return {"today.json": compact, "refresh.json": refresh, "daily.json": legacy}
 
 
 if __name__ == "__main__":
@@ -56,6 +72,6 @@ if __name__ == "__main__":
     today = dt.datetime.now(dt.timezone.utc).date()
     for filename, payload in build_feeds(catalogue, today).items():
         out = ROOT / "data" / filename
-        formatting = {"separators": (",", ":")} if filename == "today.json" else {"indent": 2}
+        formatting = {"separators": (",", ":")} if filename != "daily.json" else {"indent": 2}
         out.write_text(json.dumps(payload, ensure_ascii=False, **formatting) + "\n", encoding="utf-8")
         print(f"Updated {out} for {today} ({out.stat().st_size} bytes)")
