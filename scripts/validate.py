@@ -21,5 +21,9 @@ for mode, entries in data.items():
 for name in ("settings.yml", "shared.liquid", "full.liquid",
              "half_horizontal.liquid", "half_vertical.liquid", "quadrant.liquid"):
     assert (ROOT / name).is_file(), name
-assert len((ROOT / "data/catalogue.json").read_bytes()) < 100_000
+daily = json.loads((ROOT / "data/daily.json").read_text(encoding="utf-8"))
+assert daily["learn"] == data["learn"] and daily["discover"] == data["discover"]
+assert 1 <= daily["day_number"] <= 366
+assert len(daily["generated_date"]) == 10
+assert len((ROOT / "data/daily.json").read_bytes()) < 100_000
 print(f"OK: {sum(map(len, data.values()))} entries; 2 modes, 3 levels, 4 languages")
