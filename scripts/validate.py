@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Validate Esperanto TRMNL catalogue content and local plugin files."""
 import json
+from datetime import date
 from pathlib import Path
+
+from generate_daily import ROTATION_EPOCH
 
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT / "data/catalogue.json").read_text(encoding="utf-8"))
@@ -9,7 +12,9 @@ languages = {"en", "de", "es", "fr"}
 levels = {"beginner", "intermediate", "advanced"}
 assert set(data) == {"learn", "discover"}
 for mode, entries in data.items():
-    assert entries, mode
+    words = {entry["word"].strip().casefold() for entry in entries}
+    assert len(words) == len(entries), (mode, "duplicate lesson")
+    assert sum(entry["level"] == "beginner" for entry in entries) >= 15, mode
     for entry in entries:
         assert entry["level"] in levels, entry
         for key in ("word", "example_eo"):
@@ -23,7 +28,8 @@ for name in ("settings.yml", "shared.liquid", "full.liquid",
     assert (ROOT / "src" / name).is_file(), name
 daily = json.loads((ROOT / "data/daily.json").read_text(encoding="utf-8"))
 assert daily["learn"] == data["learn"] and daily["discover"] == data["discover"]
-assert 1 <= daily["day_number"] <= 366
-assert len(daily["generated_date"]) == 10
+generated_date = date.fromisoformat(daily["generated_date"])
+assert daily["day_number"] == generated_date.timetuple().tm_yday
+assert daily["rotation_day"] == (generated_date - ROTATION_EPOCH).days + 1
 assert len((ROOT / "data/daily.json").read_bytes()) < 100_000
 print(f"OK: {sum(map(len, data.values()))} entries; 2 modes, 3 levels, 4 languages")
