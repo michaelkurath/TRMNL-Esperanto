@@ -1,0 +1,7 @@
+<div class="layout layout--quadrant"><div class="esperanto esperanto--compact esperanto--tiny">
+  <div class="esperanto__top"><span class="esperanto__brand">★ ESPERANTO</span><span class="esperanto__tag">{{ chosen_mode | upcase }}</span></div>
+  {% if pool_count > 0 %}
+  <div class="esperanto__main"><div class="esperanto__word">{{ entry.word | escape }}</div><div class="esperanto__meaning">{{ translation | escape }}</div></div>
+  <div class="esperanto__footer"><span>{{ chosen_level | upcase }}</span><span>VORTO DE LA TAGO</span></div>
+  {% else %}<div class="esperanto__main">No entries.</div>{% endif %}
+</div></div>
