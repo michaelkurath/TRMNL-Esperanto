@@ -13,9 +13,6 @@ polling_body: ''
 id: 531807
 oauth_enabled: 'false'
 oauth_pkce_enabled: 'no'
-name: Esperanto
-description: Learn a little Esperanto daily.
-refresh_interval: 60
 custom_fields:
 - keyname: author_bio
   name: About Esperanto
@@ -51,3 +48,6 @@ custom_fields:
   - Advanced: advanced
   default: beginner
   optional: true
+name: Esperanto
+description: Learn a little Esperanto daily.
+refresh_interval: 60
