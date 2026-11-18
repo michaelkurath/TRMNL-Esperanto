@@ -2,7 +2,13 @@
   {% if entry %}
     <div class="flex flex--col flex--center gap--none w--full">
       <span class="value value--large lg:value--xlarge text--bold" data-value-fit="true" lang="eo">{{ entry.word | escape }}</span>
-      <span class="value value--small lg:value--base" lang="{{ chosen_lang | escape }}">{{ translation | escape }}</span>
+      <span class="value value--small lg:value--base" data-value-fit="true" lang="{{ chosen_lang | escape }}">{{ translation | escape }}</span>
+    </div>
+    <div class="hidden lg:visible w--full">
+      <div class="flex flex--col flex--center gap--none w--full">
+        <span class="value value--small lg:value--base text--bold" lang="eo">{{ entry.example_eo | escape }}</span>
+        <span class="description lg:description--xlarge" lang="{{ chosen_lang | escape }}">{{ example_translation | escape }}</span>
+      </div>
     </div>
   {% else %}
     <span class="label">No lesson data available.</span>
