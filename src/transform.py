@@ -3,7 +3,7 @@ def run(data):
     state = trmnl.get("state") or {}
     fields = (trmnl.get("plugin_settings") or {}).get("custom_fields_values") or {}
     pools = data.get("refresh_pools")
-    if fields.get("lesson_frequency") != "every_refresh" or not pools:
+    if not pools:
         return {
             **{key: value for key, value in data.items() if key not in ("trmnl", "refresh_pools")},
             "trmnl_state": state,
