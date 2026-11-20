@@ -1,14 +1,14 @@
 <div class="layout layout--col gap--large text--center">
   {% if entry %}
     <div class="flex flex--col flex--center gap--none w--full">
-      <span class="value value--xlarge lg:value--xxxlarge text--bold" data-value-fit="true" lang="eo">{{ entry.word | escape }}</span>
-      <span class="value value--small lg:value--base" lang="{{ chosen_lang | escape }}">{{ translation | escape }}</span>
+      <span class="value value--xlarge lg:value--xxxlarge lg:portrait:value--giga text--bold" data-value-fit="true" lang="eo">{{ entry.word | escape }}</span>
+      <span class="value value--small lg:value--base lg:portrait:value--large" lang="{{ chosen_lang | escape }}">{{ translation | escape }}</span>
     </div>
     <div class="flex flex--col flex--center gap--none w--full">
-      <span class="value value--small lg:value--base text--bold" lang="eo">{{ entry.example_eo | escape }}</span>
-      <span class="description lg:description--xlarge" lang="{{ chosen_lang | escape }}">{{ example_translation | escape }}</span>
+      <span class="value value--small lg:value--base lg:portrait:value--large text--bold" lang="eo">{{ entry.example_eo | escape }}</span>
+      <span class="description lg:description--xlarge lg:portrait:description--xxlarge" lang="{{ chosen_lang | escape }}">{{ example_translation | escape }}</span>
     </div>
-    <p class="label label--base lg:label--xlarge m--0" lang="{{ chosen_lang | escape }}">{{ note_translation | escape }}</p>
+    <p class="label label--base lg:label--xlarge lg:portrait:label--xxlarge m--0" lang="{{ chosen_lang | escape }}">{{ note_translation | escape }}</p>
   {% else %}
     <span class="label">No lesson data available.</span>
   {% endif %}
